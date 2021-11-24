@@ -11,7 +11,6 @@ function pdo_connect_mysql() {
     }
 }
 function pageHeader($title) {
-	//$num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 	echo <<<EOT
 	<!DOCTYPE html>
 		<html lang="en">
