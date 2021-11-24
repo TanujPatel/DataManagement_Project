@@ -1,11 +1,11 @@
 <?php
 function pdo_connect_mysql() {
-    $DATABASE_HOST = 'localhost'; //set to host to localhost
-    $DATABASE_USER = 'root'; //sets the user to root
-    $DATABASE_PASS = ''; //sets pass to root password
-    $DATABASE_NAME = 'project'; //sets the db name
+    $Host = 'localhost'; //set to host to localhost
+    $User = 'root'; //sets the user to root
+    $Pwd = ''; //sets pass to root password
+    $db_name = 'project'; //sets the db name
     try {
-    	return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS); //starts the connection.
+    	return new PDO('mysql:host=' . $Host . ';dbname=' . $db_name . ';charset=utf8', $User, $Pwd); //starts the connection.
     } catch (PDOException $exception) {
     	die('Failed to connect to database!'); //kills the connection if it fails to connect.
     }
