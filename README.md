@@ -19,7 +19,7 @@ Project By: Tanuj Patel,  Owen Musselman, Harris Athwal, Gutu Shiferaw, Rushin C
 6. Once you have created a new database click the SQL tab at the top
 7. Go to the 'Database' file and download the sql file 
 8. Then open phpMyAdmin click import(tab on top of screen on phpMyAdmin) and import the sql file you have downloaded
-9. Your database should have successfully created multiple tables with views as shown in the Database pdf in the database folder 
+9. Your database should have successfully created multiple tables(7 tables) with views(11 views)
 
 ## **How to run the code**
 
