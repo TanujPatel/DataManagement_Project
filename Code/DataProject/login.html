@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="Format_LogIn.css">
+    <!--
+            <script type="text/javascript" src=""></script>
+        -->
+    <script type="text/javascript">
+        function validate() {
+            var a = document.getElementById("email").value;
+            var b = document.getElementById("pass").value;
+            if (a == "" || b == "") {
+                alert("Please make sure all fields are filled and not empty.");
+                return false;
+            }
+        }
+    </script>
+
+    <title>StockX</title>
+
+</head>
+
+<body class="background">
+
+    <!--Navigation Bar-->
+    <div class="navBar">
+        <a href="MainPage.html">Home</a>
+        <a href="index.php?page=shoes">Shoes</a>
+        <a class="active" href="Login.html">Log In</a>
+        <a href="Signup.html">Sign Up</a>
+
+    </div>
+
+    <br><br>
+
+    <div id="box">
+
+        <form method="POST" action="checkUser.php" onsubmit="return validate()">
+
+            <h1 class="htitle" style="background-color: black;">Log In</h1>
+
+            Email Address <br>
+            <input type="Email" name="email" id="email" class="same">
+            <br><br> Password <br>
+            <input type="password" name="pass" id="pass" class="same">
+            <br><br>
+
+            <input type="submit" name="submit" id="ssubmit" value="Log In" style="background-color: black;">
+
+        </form>
+
+    </div>
+</body>
+
+</html>

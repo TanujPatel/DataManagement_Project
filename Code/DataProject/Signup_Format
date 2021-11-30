@@ -1,0 +1,182 @@
+/* Navbar container */
+
+body {
+    margin: 0;
+}
+
+.wrap {
+    margin: 15%;
+    margin-top: 0%;
+    padding: 1%;
+    background-color: black;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+}
+
+.active {
+    background-color: maroon;
+}
+
+
+/* Links inside the navbar */
+
+.navBar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* The dropdown container */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+/* Dropdown button */
+
+.dropdown .drop_button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+
+/* Add a red background color to navbar links on hover */
+
+.navBar a:hover,
+.dropdown:hover .drop_button {
+    background-color: maroon;
+}
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: maroon;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown_content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown_content a:hover {
+    font-weight: bolder;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.background {
+    background-image: url('Background2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.dark-mode {
+    background-image: url('Background.jpg');
+}
+
+#box {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+    font-family: Verdana, sans-serif;
+}
+
+.tab {
+    background: black;
+    display: block;
+    height: 60px;
+    line-height: 20px;
+    text-align: center;
+    width: 250px;
+    float: right;
+}
+
+form {
+    padding: 20px;
+    width: 100%;
+    float: left;
+}
+
+a {
+    color: black;
+}
+
+input[type=submit] {
+    border: none;
+    width: 90%;
+    padding: 7px;
+    margin: 5px 3px;
+}
+
+.same {
+    width: 250px;
+    height: 20px;
+    border-top: black 10px;
+    border-left: black 10px;
+    border-right: black 10px;
+    outline: none;
+    font-family: Verdana, sans-serif;
+}
+
+.htitle {
+    background-color: #099FFF;
+    padding: 10px;
+    color: white;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#ssubmit {
+    font-weight: bolder;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: none;
+}
