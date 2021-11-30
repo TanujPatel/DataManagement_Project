@@ -17,8 +17,9 @@ Project By: Tanuj Patel,  Owen Musselman, Harris Athwal, Gutu Shiferaw, Rushin C
 4. Login in with username: root and leave the password blank
 5. Create a new database and name it dataproject 
 6. Once you have created a new database click the SQL tab at the top
-7. Go to the 'Database code' file in the Code folder and download it and click import(tab on top of screen on phpMyAdmin) and import the sql file you have downloaded
-8. Your database should have successfully created multiple tables with views as shown in the Database pdf in the database folder 
+7. Go to the 'Database' file and download the sql file 
+8. Then open phpMyAdmin click import(tab on top of screen on phpMyAdmin) and import the sql file you have downloaded
+9. Your database should have successfully created multiple tables with views as shown in the Database pdf in the database folder 
 
 ## **How to run the code**
 
