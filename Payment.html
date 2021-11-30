@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="Payment_Format.css">
+    <!--
+            <script type="text/javascript" src=""></script>
+        -->
+    <script type="text/javascript">
+        function validateForm(){
+        /*checks to see if the user has inputted a number and if not it warns them*/
+            var x = document.getElementById("fname").value;
+            if(x==""||x==null){
+                alert("Please enter the Full Name");
+                return false;
+            }
+
+            var y = document.getElementById("address").value;
+            if(y==""||y==null){
+                alert("Please enter the address");
+                return false;
+            }
+
+            var z = document.getElementById("city").value;
+            if(z==""||z==null){
+                alert("Please enter the city");
+                return false;
+            }
+
+            var a = document.getElementById("email").value;
+            if(a==""||a==null){
+                alert("Please enter the Email");
+                return false;
+            }
+
+            var b = document.getElementById("prov").value;
+            if(b==""||b==null){
+                alert("Please enter the Province");
+                return false;
+            }
+
+            var c = document.getElementById("cvv").value;
+            if(c==""||c==null){
+                alert("Please enter the CCV number");
+                return false;
+            }
+
+            var d = document.getElementById("pcode").value;
+            if(d==""||d==null){
+                alert("Please enter the Postal Code");
+                return false;
+            }
+
+            var e = document.getElementById("cname").value;
+            if(e==""||e==null){
+                alert("Please enter the name on the credit card");
+                return false;
+            }
+
+            var f = document.getElementById("cnum").value;
+            if(f==""||f==null){
+                alert("Please enter the credit card number");
+                return false;
+            }
+
+            var g = document.getElementById("emonth").value;
+            if(g==""||g==null){
+                alert("Please enter the month the card expires");
+                return false;
+            }
+
+            var h = document.getElementById("eyear").value;
+            if(h==""||h==null){
+                alert("Please enter the year the card expires");
+                return false;
+            }
+        }
+    </script>
+
+    <title>StockX</title>
+
+</head>
+
+<body class="background">
+
+    <!--Navigation Bar-->
+    <div class="navBar">
+        <a href="MainPage.html">Home</a>
+        <a href="index.php?page=shoes">Shoes</a>
+        <a href="Login.html">Log In</a>
+        <a href="Signup.html">Sign Up</a>
+
+    </div>
+
+    <br><br>
+
+    <div id="box">
+
+        <form method="POST" action="userpayment.php" onsubmit="return validateForm()">
+
+            <div class="billinginfo">
+                <h1 class="htitle" style="background-color: black">Billing Information</h1>
+                <br><input class="same" type="text" name="fname" id="fname" placeholder="Full Name"/><br>
+                <br><input class="same" type="email" name="Semail" id="email" placeholder="Email"/><br>
+                <br><input class="same" type="text" name="address" id="address" placeholder="Address"/><br>
+                <br><input class="same" type="text" name="city" id="city" placeholder="City"/><br>
+                <br><input class="same" type="text" name="prov" id="prov" placeholder="Province"/><br>
+                <br><input class="same" type="text" name="pcode" id="pcode" placeholder="Postal Code"/><br>
+            </div>
+
+            <br><b><hr width="450px"></b><br>
+
+            <div class="Payment">
+                <h1 class="htitle" style="background-color: black">Payment Information</h1>
+                <br>Name on Card<br><input class="samesame" type="text" name="cname" id="cname"/><br><br>
+                Credit Card Number<br><input class="samesame" type="text" name="cnum" id="cnum"/><br><br>
+                Expiration<br><br><input class="same1" type="month" name="emonth" id="emonth" placeholder="MM"/>
+                /<input class="same1" type="" name="eyear" id="eyear" placeholder="YYYY"/><br><br>
+                CVV<br><input class="same2" type="password" name="cvv" id="cvv"/><br><br>
+
+                <img src="visa1.png" height="40px" width="60px"  >&nbsp;<img src="mastercard.png"  height="40px" width="60px" >&nbsp;<img src="express2.png" height="40px" width="40px"><br><br><br>
+
+                <input id="ssubmit" type="submit" name="submit" value="CONFIRM PAYMENT" style="background-color: black">
+            </div>
+
+            <br><b><hr width="450px"></b><br><br>
+
+        </form>
+
+    </div>
+    
+</body>
+
+</html>

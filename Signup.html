@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="Signup_Format.css">
+    <!--
+            <script type="text/javascript" src=""></script>
+        -->
+    <script type="text/javascript">
+        function validate() 
+        {
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("lname").value;
+            var c = document.getElementById("user").value;
+            var d = document.getElementById("pass").value;
+            var e = document.getElementById("email").value;
+
+            if (a == "" || b == "" || c == "" || e == ""||d == "") 
+            {
+                alert ("Please complete form before submission.");
+                return false;
+            }
+        }
+    </script>
+
+    <title>StockX</title>
+
+</head>
+
+<body class="background">
+
+    <!--Navigation Bar-->
+    <div class="navBar">
+        <a href="MainPage.html">Home</a>
+        <a href="index.php?page=shoes">Shoes</a>
+        <a href="Login.html">Log In</a>
+        <a class="active" href="Signup.html">Sign Up</a>
+
+    </div>
+
+    <br><br>
+
+    <div id="box">
+
+        <form method="POST" action="createUser.php" onsubmit="return validate()">
+
+            <h1 class="htitle" style="background-color: black">Sign Up</h1>
+            <p>By entering your email you will also recieve daily newsletters</p>
+
+            <br>First Name <br>
+            <input class="same" type="text" name="fname" id="fname"> 
+            <br><br>Last Name <br>
+            <input class="same" type="text" name="lname" id="lname"> 
+            <br><br>Userame <br>
+            <input class="same" type="text" name="user" id="user"> 
+            <br><br>Password <br>
+            <input class="same" type="password" name="pass" id="pass"> 
+            <br><br>Email <br>
+            <input class="same" type="Email" name="email" id="email"> 
+            <br><br>
+
+            <input id="ssubmit" type="submit" name="submit" value="SUBMIT" style="background-color: black">
+
+        </form>
+
+    </div>
+</body>
+
+</html>
