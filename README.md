@@ -4,7 +4,7 @@ Project By: Tanuj Patel,  Owen Musselman, Harris Athwal, Gutu Shiferaw, Rushin C
 # **Table of Contents:**
 1. [Code](Code)
     - [Code Files](Code/DataProject)
-    - [Database Code](Code/Database/dataproject.sql)
+    - [Database Code](Database/dataproject.sql)
 
 
 # **Instructions to run the application (Windows Only):**
